@@ -5,8 +5,8 @@ using System.Text;
 
 namespace MISA.Core.Intefaces
 {
-    public interface ICustomerGroupRepository:IBaseRepository<CustomerGroup>
+    public interface ICustomerService:IBaseService<Customer> 
     {
-        bool CheckCustomerGroupName(string name);
+
     }
 }

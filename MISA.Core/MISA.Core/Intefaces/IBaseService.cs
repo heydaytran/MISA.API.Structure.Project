@@ -18,7 +18,7 @@ namespace MISA.Core.Intefaces
         /// </summary>
         /// <returns> Danh sách đối tượng</returns>
         /// CreateBy : TVTHINH
-        IReadOnlyList<MISAEntity> GetEntities();
+        IEnumerable<MISAEntity> GetEntities();
 
         /// <summary>
         /// Lấy thông tin đối tượng theo khóa chính

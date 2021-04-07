@@ -9,6 +9,12 @@ namespace MISA.Core.Services
     // BaseService thực hiện những công việc chung của base interface(IBaseService)
     public class BaseService<MISAEntity> : IBaseService<MISAEntity>
     {
+        IBaseRepository<MISAEntity> _baseRepository;
+        public BaseService(IBaseRepository<MISAEntity> baseRepository)
+        {
+            _baseRepository = baseRepository; 
+        }
+
         public int Delete(Guid entityId)
         {
             throw new NotImplementedException();
@@ -19,9 +25,11 @@ namespace MISA.Core.Services
             throw new NotImplementedException();
         }
 
-        public IReadOnlyList<MISAEntity> GetEntities()
+        public IEnumerable<MISAEntity> GetEntities()
         {
-            throw new NotImplementedException();
+            var entities = _baseRepository.GetEntities();
+            return entities;
+
         }
 
         public int Insert(MISAEntity entity)
