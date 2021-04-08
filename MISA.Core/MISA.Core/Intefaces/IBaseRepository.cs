@@ -10,7 +10,7 @@ namespace MISA.Core.Intefaces
     /// Base repository
     /// </summary>
     /// <typeparam name="MISAEntity">Kiểu của thực thể</typeparam>
-    public interface IBaseRepository<MISAEntity>
+    public interface IBaseRepository<MISAEntity> 
     {
         /// <summary>
         /// Lấy toàn bộ dữ liệu của bảng trong database
