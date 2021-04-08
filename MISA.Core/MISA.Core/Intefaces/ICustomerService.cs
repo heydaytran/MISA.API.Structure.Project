@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MISA.Core.Intefaces
 {
-    public interface ICustomerService:IBaseService<Customer> 
+    public interface ICustomerService:IBaseService<Customer>
     {
 
     }

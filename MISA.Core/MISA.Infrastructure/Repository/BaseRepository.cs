@@ -34,6 +34,12 @@ namespace MISA.Infrastructure.Repository
         public MISAEntity GetById(Guid entityId)
         {
             var storname = $"Proc_Get{_tableName}ById";
+            int dem, dem1;
+            for( int i = 0; i<100; i++)
+            {
+                dem = i;
+                dem1 = i + 1;
+            }    
             DynamicParameters dynamicParameters = new DynamicParameters();
             var storeGetByIdInputParamName = $"@{_tableName}Id";
             dynamicParameters.Add(storeGetByIdInputParamName, entityId);
@@ -43,11 +49,12 @@ namespace MISA.Infrastructure.Repository
 
         public IEnumerable<MISAEntity> GetEntities()
         {
-            // thực hiện lấy dữ liệu từ database
-            var entities = _dbConnection.Query<MISAEntity>($"Proc_Get{_tableName}s", commandType:CommandType.StoredProcedure);
+            var storname = $"Proc_Get{_tableName}s";
+           
+            var entities = _dbConnection.Query<MISAEntity>(storname, commandType: CommandType.StoredProcedure);
             return entities;
         }
-
+        
         public int Insert(MISAEntity entity)
         {
             var storeName = $"Proc_Insert{_tableName}";

@@ -7,6 +7,7 @@ namespace MISA.Core.Intefaces
 {
     public interface ICustomerGroupRepository:IBaseRepository<CustomerGroup>
     {
-        bool CheckCustomerGroupName(string name);
+        bool CheckCustomerGroupName(string name);  
     }
+
 }

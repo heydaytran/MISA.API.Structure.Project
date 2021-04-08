@@ -43,7 +43,7 @@ namespace MISA.Core.Entities
         /// <summary>
         /// Khóa ngoại(FK) -Nhóm khách hàng 
         /// </summary>
-        public Guid CustomerGroupId { get; set; }
+        public Guid? CustomerGroupId { get; set; }
 
         /// <summary>
         /// Số điện thoại

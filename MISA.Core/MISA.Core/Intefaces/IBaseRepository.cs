@@ -32,10 +32,9 @@ namespace MISA.Core.Intefaces
         /// <param name="entity"> đối tượng thực th</param>
         /// <returns> Số bản ghi được thêm mới thành công</returns>
         int Insert(MISAEntity entity);
-
         /// <summary>
         /// Sửa thông tin đối tượng
-        /// </summary>
+        /// </summary> 
         /// <param name="entity"> Thực thể đã được chỉnh sửa</param>
         /// <param name="entityId"> ID của thực thể</param>
         /// <returns> Số bản ghi đã update được trong DB</returns>

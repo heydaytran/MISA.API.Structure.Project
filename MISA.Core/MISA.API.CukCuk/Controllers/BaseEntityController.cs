@@ -24,17 +24,18 @@ namespace MISA.API.CukCuk.Controllers
 
         // GET: api/<BaseEntityController>
         [HttpGet]
-        public IEnumerable<MISAEntity> Get()
+        public IActionResult   Get()
         {
             var entities = _baseService.GetEntities();
-            return entities;
+            return Ok(entities);
         }
 
         // GET api/<BaseEntityController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(Guid id)
         {
-            return "value";
+            var entities = _baseService.GetById(id);
+            return Ok(entities);
         }
 
         // POST api/<BaseEntityController>

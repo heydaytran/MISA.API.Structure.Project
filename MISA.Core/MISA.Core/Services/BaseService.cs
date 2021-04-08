@@ -22,7 +22,8 @@ namespace MISA.Core.Services
 
         public MISAEntity GetById(Guid entityId)
         {
-            throw new NotImplementedException();
+            return _baseRepository.GetById(entityId);
+            
         }
 
         public IEnumerable<MISAEntity> GetEntities()
