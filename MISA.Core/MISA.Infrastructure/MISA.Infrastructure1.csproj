@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MISA.Core\MISA.Core.csproj" />
+    <ProjectReference Include="..\MISA.Core\MISA.Core1.csproj" />
   </ItemGroup>
 
 </Project>

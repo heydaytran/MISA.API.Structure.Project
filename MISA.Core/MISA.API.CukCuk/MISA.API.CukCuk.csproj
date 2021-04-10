@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MISA.Core\MISA.Core.csproj" />
-    <ProjectReference Include="..\MISA.Infrastructure\MISA.Infrastructure.csproj" />
+    <ProjectReference Include="..\MISA1.Core\MISA1.Core.csproj" />
+    <ProjectReference Include="..\MISA1.Infrastructure\MISA1.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

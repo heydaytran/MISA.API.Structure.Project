@@ -1,8 +1,5 @@
-﻿using ServiceStack.DataAnnotations;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace MISA.Core.Entities
 {
@@ -81,13 +78,13 @@ namespace MISA.Core.Entities
         /// <summary>
         /// Khóa chính 
         /// </summary>
-        [Key]
+      
         public Guid CustomerId { get; set; }
 
         /// <summary>
         /// Mã khách hàng
         /// </summary>
-        [Unique]
+       
         public string CustomerCode { get; set; }
 
         /// <summary>
